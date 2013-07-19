@@ -6,3 +6,7 @@ function loadPage($smarty, $controllerName, $actionName = 'index'){
     $function = $actionName . 'Action';
     $function($smarty);
 }
+function loadTemplate($smarty, $templateName){
+    $smarty->display($templateName . TemplatePostfix);
+
+}
